@@ -24,6 +24,8 @@ Git 협업 워크플로우(브랜치, PR, 코드 리뷰, 이슈, 충돌 해결, 
 
 <!-- 유틸 함수 목록 시작 -->
 - `string_utils.reverse_string(text)`: 문자열을 뒤집는다 (웅블랙)
+- `file_utils.read_lines(path)`: 파일을 줄 단위로 읽는다 (팀장)
+- `utils/math_utils.add(a, b)`: 두 수의 합을 구한다 (밀키정)
 <!-- 유틸 함수 목록 끝 -->
 
 ## 협업 규칙
