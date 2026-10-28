@@ -6,5 +6,7 @@ def reverse_string(text: str) -> str:
 
     >>> reverse_string("abc")
     'cba'
+    >>> reverse_string("")
+    ''
     """
     return text[::-1]
