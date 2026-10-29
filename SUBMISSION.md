@@ -71,66 +71,79 @@
 - 루트에 잘못 올라간 `int`, `math_utils.py`(PR #19)는 PR #21에서 삭제했다.
 
 ## Evidence
-`git log --oneline --graph --all` 결과:
+`git log --oneline --graph --all` 결과 (PR #16 병합 직전 기준):
 
 ```txt
-*   473e352 Merge remote-tracking branch 'origin/main' into feature/leader-submission
-|\
-| *   fe23cca Merge pull request #18 from minyong96/feature/ungblack-troubleshoot-reset
-| |\
-| | * 9ddd440 docs: reset --soft 트러블슈팅 기록 추가
-| * |   c221b4b Merge pull request #21 from minyong96/feature/leader-conflict-1
-| |\ \
-| | * | 32d4a2f docs: 충돌 해결 기록(README 같은 hunk, math_utils 이동 vs 수정) 추가
-| | * | 9054a3d chore: 루트에 잘못 올라온 int, math_utils.py 삭제하고 README에 add 항목 추가
-| | * |   58c03e5 Merge main into feature/leader-conflict-1 (README, math_utils 충돌 해결)
-| | |\ \
-| | |/ /
-| |/| |
-| * | |   441ff73 Merge pull request #20 from minyong96/feature/milkyjung-math-utils
-| |\ \ \
+*   7f92ce4 Merge origin/main into feature/leader-submission
+|\  
+| *   0c55bbb Merge pull request #23 from minyong96/fix/troubleshoot-revert-entry
+| |\  
+| | * 1514a94 fix: revert 기록을 올바른 섹션으로 옮기고 amend 섹션 복원
+| |/  
+| *   900d414 Merge pull request #22 from minyong96/feature/milkyjung-math-utils
+| |\  
+| | * 3f1d252 docs: revert 트러블슈팅 기록 추가
+* | | 022ed7c docs: SUBMISSION에 밀키정 revert PR(#22, #23) 반영
+* | | 21e4651 docs: SUBMISSION 제출물 인덱스 보강, README 팀원 링크와 문서 목록 정리
+* | | 473e352 Merge remote-tracking branch 'origin/main' into feature/leader-submission
+|\| | 
+| * |   fe23cca Merge pull request #18 from minyong96/feature/ungblack-troubleshoot-reset
+| |\ \  
+| | * | 9ddd440 docs: reset --soft 트러블슈팅 기록 추가
+| * | |   c221b4b Merge pull request #21 from minyong96/feature/leader-conflict-1
+| |\ \ \  
+| | * | | 32d4a2f docs: 충돌 해결 기록(README 같은 hunk, math_utils 이동 vs 수정) 추가
+| | * | | 9054a3d chore: 루트에 잘못 올라온 int, math_utils.py 삭제하고 README에 add 항목 추가
+| | * | |   58c03e5 Merge main into feature/leader-conflict-1 (README, math_utils 충돌 해결)
+| | |\ \ \  
+| | |/ / /  
+| |/| | |   
+| * | | |   441ff73 Merge pull request #20 from minyong96/feature/milkyjung-math-utils
+| |\ \ \ \  
+| | | |_|/  
+| | |/| |   
 | | * | | 79d1119 feat: 두 수의 합을 구하는 add 함수 추가
 | * | | | b94447d Merge pull request #19 from minyong96/feature/milkyjung-math-utils
-| |\| | |
-| | |_|/
-| |/| |
+| |\| | | 
+| | |_|/  
+| |/| |   
 | | * | 748bedf feat: 두 수의 합을 구하는 add 함수 추가
 | | * | 217db8b docs: add 음수 입력 예시 추가 (리뷰 반영)
-| |/ /
+| |/ /  
 | * |   0f5e972 Merge pull request #15 from minyong96/feature/leader-troubleshoot
-| |\ \
+| |\ \  
 | | * | 5dc7f0b docs: troubleshooting 로그 틀과 amend, stash 기록 추가
 | * | |   9585835 Merge pull request #14 from minyong96/feature/leader-file-utils
-| |\ \ \
+| |\ \ \  
 | | * | | 2bf0f7d feat: 파일을 줄 단위로 읽는 read_lines 함수 추가
-| | |/ /
+| | |/ /  
 | * | |   066cdc9 Merge pull request #17 from minyong96/feature/ungblack-string-utils
-| |\ \ \
+| |\ \ \  
 | | * | | a8fc47b docs: reverse_string 빈 문자열 예시 추가 (리뷰 반영)
 | | * | | e5d3918 feat: 문자열 뒤집기 함수 reverse_string 추가
-| |/ / /
+| |/ / /  
 | * | |   de0971d Merge pull request #13 from minyong96/feature/leader-contributing
-| |\ \ \
+| |\ \ \  
 | | * | | 46cfe55 docs: CONTRIBUTING 협업 규칙 문서 추가
-| | |/ /
+| | |/ /  
 | * | |   f184eb5 Merge pull request #12 from minyong96/feature/leader-init
-| |\ \ \
+| |\ \ \  
 | * | | | b02fba3 docs: 가이드에 전체 진행 순서와 첫 단계(리뷰) 안내 추가
 | * | | | 0f4bb41 docs: 가이드 리뷰 항목을 PR 통합 기준(리뷰 3개)으로 수정
 | * | | | a81c963 docs: 팀원 가이드를 저장소 루트로 이동
 | * | | | 37d1576 docs: 팀원별 진행 가이드(웅블랙, 밀키정) 추가
-| | |/ /
-| |/| |
+| | |/ /  
+| |/| |   
 | | | *   b9a9079 Merge remote-tracking branch 'origin/feature/leader-conflict-2' into feature/leader-conflict-1
-| | | |\
+| | | |\  
 | | | | * 14624bd refactor: math_utils를 src/utils 패키지로 이동
-| | | |/
-| | |/|
+| | | |/  
+| | |/|   
 | | | * 8cf41cb docs: README 함수 목록에 file_utils 항목 추가
-| | |/
+| | |/  
 | | * ab0a301 chore: 저장소 초기 구조와 PR/Issue 템플릿 추가
-| |/
+| |/  
 * / 833b791 docs: SUBMISSION 제출물 인덱스 초안 추가
-|/
+|/  
 * 4e1dcd8 first commit
 ```
