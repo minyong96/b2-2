@@ -17,6 +17,7 @@
 | #4 | [#15](https://github.com/minyong96/b2-2/pull/15) | `docs/troubleshooting-log.md` 틀, amend/stash 기록 |
 | #5, #6 | [#21](https://github.com/minyong96/b2-2/pull/21) | 충돌 #1, #2 해결과 `docs/conflict-resolution.md` |
 | #7 | [#16](https://github.com/minyong96/b2-2/pull/16) | 이 문서(SUBMISSION.md)와 증빙 |
+| - | [#23](https://github.com/minyong96/b2-2/pull/23) | PR #22의 revert 기록 위치 교정 |
 
 - 리뷰 작성: [#17](https://github.com/minyong96/b2-2/pull/17), [#18](https://github.com/minyong96/b2-2/pull/18), [#19](https://github.com/minyong96/b2-2/pull/19), [#20](https://github.com/minyong96/b2-2/pull/20)
 
@@ -32,7 +33,7 @@
 | 이슈 | PR | 내용 |
 |---|---|---|
 | #10 | [#19](https://github.com/minyong96/b2-2/pull/19), [#20](https://github.com/minyong96/b2-2/pull/20) | `src/math_utils.py` (유틸 함수). #19에서 파일 위치가 잘못되어 #20으로 바로잡음 |
-| #11 | (revert 기록 PR, 작성 예정) | troubleshooting 기록 - revert |
+| #11 | [#22](https://github.com/minyong96/b2-2/pull/22) | troubleshooting 기록 - revert (위치 오류는 [#23](https://github.com/minyong96/b2-2/pull/23)에서 교정) |
 
 - 리뷰 작성: [#14](https://github.com/minyong96/b2-2/pull/14), [#15](https://github.com/minyong96/b2-2/pull/15)
 
@@ -62,7 +63,7 @@
 |---|---|---|
 | `git commit --amend` | 팀장 | `docs/troubleshooting-log.md` |
 | `git reset --soft HEAD~1` | 팀장, 웅블랙 (PR #18) | `docs/troubleshooting-log.md` |
-| `git revert` | 팀장, 밀키정 (작성 예정) | `docs/troubleshooting-log.md` |
+| `git revert` | 팀장, 밀키정 (PR #22, #23) | `docs/troubleshooting-log.md` |
 | `git stash` / `git stash pop` | 팀장 | `docs/troubleshooting-log.md` |
 
 ## 참고 사항
