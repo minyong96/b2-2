@@ -6,14 +6,14 @@ Git 협업 워크플로우(브랜치, PR, 코드 리뷰, 이슈, 충돌 해결, 
 | 역할 | 이름 | GitHub |
 |---|---|---|
 | 팀장 | 팀장 | [@minyong96](https://github.com/minyong96) |
-| 팀원 | 웅블랙 | (추가 예정) |
-| 팀원 | 밀키정 | (추가 예정) |
+| 팀원 | 웅블랙 | [@woongblack](https://github.com/woongblack) |
+| 팀원 | 밀키정 | [@Hojun-lang](https://github.com/Hojun-lang) |
 
 ## 폴더 구조
 ```
 .
 ├── README.md
-├── SUBMISSION.md      # 제출물 인덱스 (작성 예정)
+├── SUBMISSION.md      # 제출물 인덱스 (팀원별 PR/문서/증빙 링크)
 ├── docs/              # 협업 문서 (CONTRIBUTING, conflict-resolution, troubleshooting-log)
 ├── src/               # 팀원별 유틸 함수
 └── .github/           # Issue / PR 템플릿
@@ -29,4 +29,9 @@ Git 협업 워크플로우(브랜치, PR, 코드 리뷰, 이슈, 충돌 해결, 
 <!-- 유틸 함수 목록 끝 -->
 
 ## 협업 규칙
-GitHub Flow를 따릅니다. 상세 규칙은 `docs/CONTRIBUTING.md`(작성 예정)를 참고하세요.
+GitHub Flow를 따릅니다. 상세 규칙은 [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md)를 참고하세요.
+
+## 문서
+- [SUBMISSION.md](SUBMISSION.md): 팀원별 PR/Issue와 증빙 모음
+- [docs/conflict-resolution.md](docs/conflict-resolution.md): 충돌 해결 기록
+- [docs/troubleshooting-log.md](docs/troubleshooting-log.md): amend, reset, revert, stash 기록
